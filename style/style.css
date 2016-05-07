@@ -1,0 +1,61 @@
+body{
+  font-family: 'Arimo', sans-serif;
+}
+#main-container{
+  position: absolute;
+  top: 20px;
+}
+.hourly-schedule-container{
+  position: relative;
+}
+.schedules .time-slot{
+  
+  width: 30px;
+  height: 15px;
+  margin-top: 20px;
+  padding: 0;
+  background-color: #949698;
+  cursor: pointer;
+  float: left;
+}
+.schedules .time-slot span{
+  font-size: 10px;
+  top: -20px;
+  position: relative;
+  left: -4px;
+}
+.schedules .time-slot.start,
+.schedules .time-slot.lunch{
+  border-left: 4px solid;
+}
+.schedules .time-slot.end{
+  border-right: 4px solid;
+} 
+.schedules .time-slot.end span{
+  margin-left: 20px;
+} 
+.schedules div[data-slot-selected],
+.schedules div[data-slot-selecting] {
+  background-color: #01DE08;
+}
+.schedules div[data-disabled] { 
+  opacity: 0.55; 
+}
+#details{
+  position: absolute;
+  top: 10em;
+  border: 2px solid #bbb;
+  padding: 5px;
+  width: 65%;
+  font-size: 14px;
+}
+#details .requirement{
+  color: red;
+}
+#details .notes{
+  color: green;
+}
+#details h3{
+  text-transform: uppercase;
+  text-decoration: underline;
+}
